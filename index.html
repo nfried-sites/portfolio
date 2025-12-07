@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Friedlander - Portfolio</title>
+    <style>
+        /* BASE STYLES - Brutalist / Academic */
+        :root {
+            --bg-color: #f4f4f0;
+            --text-color: #000000;
+            --border: 1px solid black;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.4;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* TYPOGRAPHY */
+        h1 {
+            font-size: 3.5rem;
+            font-weight: normal;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.05rem;
+            border-bottom: 2px solid black;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid black;
+            padding-bottom: 0.25rem;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-style: italic;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        a {
+            color: var(--text-color);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* LAYOUT UTILITIES */
+        .contact-bar {
+            font-size: 1rem;
+            margin-bottom: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 900px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* PROJECT CARD */
+        .project-card {
+            border: 1px solid black;
+            padding: 1.25rem;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .meta {
+            font-size: 0.85rem;
+            font-family: monospace;
+            margin-top: auto;
+            padding-top: 0.5rem;
+            border-top: 1px dotted #ccc;
+            color: #444;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* VIDEO EMBED STYLES */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            margin-bottom: 1rem;
+            border: 1px solid black;
+            background: black;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .no-embed-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e0e0e0;
+            border: 1px solid black;
+            height: 200px;
+            margin-bottom: 1rem;
+            text-align: center;
+            padding: 1rem;
+            font-style: italic;
+        }
+
+        footer {
+            margin-top: 5rem;
+            border-top: 2px solid black;
+            padding-top: 1rem;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nicholas Friedlander</h1>
+        <div class="contact-bar">
+            <span>Based in New York</span>
+            <span><a href="https://linkedin.com/in/nicholas-friedlander" target="_blank">LinkedIn</a></span>
+            <span><a href="https://youtube.com/@nfried98" target="_blank">YouTube</a></span>
+            <span><a href="https://www.instagram.com/nfried.mp4/" target="_blank">Instagram</a></span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Creative Projects</h2>
+        <div class="grid">
+            
+            <div class="project-card">
+                <div class="video-wrapper">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/rwvzc5SRDNM" title="Duel Video" allowfullscreen></iframe>
+                </div>
+                <h3>"We had a duel in the middle of campus..."</h3>
+                <span class="subtitle">Director, Producer & Editor</span>
+                <p>A culmination of a social performance art piece promoting campus-engagement in a comedic live western-style duel.</p>
+                <div class="meta">
+                    <span>Released 12/02/2025</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="video-wrapper">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/HoaIaqAzjqo" title="Big Colt Navy" allowfullscreen></iframe>
+                </div>
+                <h3>"big colt navy - The Binghamton Outlaw"</h3>
+                <span class="subtitle">Director, Producer & Editor</span>
+                <p>Music video for an original performance art character, combining comedic rap music production with noir-western visuals.</p>
+                <div class="meta">
+                    <span>Released 11/19/2025</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="video-wrapper">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/9fmq12k2Xwk" title="Four of Cups" allowfullscreen></iframe>
+                </div>
+                <h3>"four of cups"</h3>
+                <span class="subtitle">Director, Producer & Editor</span>
+                <p>Experimental film incorporating color grading and multi-track audio. Selected for SEFF 2025.</p>
+                <div class="meta">
+                    <span>Released 05/09/2025</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="video-wrapper">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/WEvIf0X8zrA" title="Duckman" allowfullscreen></iframe>
+                </div>
+                <h3>"who is duckman?"</h3>
+                <span class="subtitle">Assistant Director, Producer & Editor</span>
+                <p>A documentary/mockumentary produced in 24 hours about a masked campus character named Duckman.</p>
+                <div class="meta">
+                    <span>Released 05/01/2025</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="no-embed-box">
+                    <a href="https://www.youtube.com/@PeakCinemaPodcast" target="_blank">Visit Podcast Channel</a>
+                </div>
+                <h3>Peak Cinema Podcast</h3>
+                <span class="subtitle">Lead Editor (Season 2)</span>
+                <p>Film analysis podcast for the Binghamton Film Production Society (FPS).</p>
+                <div class="meta">
+                    <span>2025 - Present</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="no-embed-box">
+                     <a href="https://www.youtube.com/@DontMakeMeLaugh-Bing" target="_blank">Visit Comedy Channel</a>
+                </div>
+                <h3>Don’t Make Me Laugh</h3>
+                <span class="subtitle">Lead Editor</span>
+                <p>FPS Comedy Show. Edited "Grand Slam," "Sticky Hands," and "Dracumentary."</p>
+                <div class="meta">
+                    <span>Spring 2025</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="video-wrapper">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/aq0kIphVeCs" title="Jame5" allowfullscreen></iframe>
+                </div>
+                <h3>"Jame5 - wHERE HAVE YOU bEEN?!"</h3>
+                <span class="subtitle">Director, Producer & Editor</span>
+                <p>Music video showcasing complex visual effects, color grading, and visual-tempo work.</p>
+                <div class="meta">
+                    <span>Released 02/10/2025</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="video-wrapper">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/TO2UgZcRs8Q" title="STETS" allowfullscreen></iframe>
+                </div>
+                <h3>"STETS"</h3>
+                <span class="subtitle">Director, Producer & Editor</span>
+                <p>Binghamton FPS 48-hour film competition winner.</p>
+                <div class="meta">
+                    <span>Released 10/09/2024</span>
+                </div>
+            </div>
+
+             <div class="project-card">
+                <div class="video-wrapper">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/bTgOoruqKhA" title="Logan Jung" allowfullscreen></iframe>
+                </div>
+                <h3>"Logan Jung - Ravin"</h3>
+                <span class="subtitle">Director, Producer & Editor</span>
+                <p>Music video integrating original music production with retro-style visuals.</p>
+                <div class="meta">
+                    <span>Released 08/21/2024</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="video-wrapper">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/4XRaWHbR8uk" title="Uncanny Creativity" allowfullscreen></iframe>
+                </div>
+                <h3>"Uncanny Creativity: CHATGPT"</h3>
+                <span class="subtitle">Director, Producer & Editor</span>
+                <p>Passion project exploring AI creativity. SCCC RTV "Best Feature" award winner.</p>
+                <div class="meta">
+                    <span>Released 05/19/2023</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Educational & PSA</h2>
+        <div class="grid">
+            
+            <div class="project-card">
+                <h3>SWR High School Electives</h3>
+                <span class="subtitle">Director, Producer & Editor</span>
+                <p>Informative series showcasing elective courses at Shoreham-Wading River High School.</p>
+                <div class="meta">
+                    <span>2023 - 2024</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>SADD Safety Videos</h3>
+                <span class="subtitle">Director, Producer & Editor</span>
+                <p>Series of PSAs promoting seatbelt use ("Click It or Ticket") and passenger safety.</p>
+                <div class="meta">
+                    <span>2021 - 2024</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="video-wrapper">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/6bt1NEcjYXw" title="Bus Safety Song" allowfullscreen></iframe>
+                </div>
+                <h3>"The Bus Safety Song"</h3>
+                <span class="subtitle">Director, Producer & Editor</span>
+                <p>Educational song/video for the Suffolk County Legislature.</p>
+                <div class="meta">
+                    <span>Released 05/19/2023</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="video-wrapper">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/q4dNvyKeKCg" title="Bike Safety Music Video" allowfullscreen></iframe>
+                </div>
+                <h3>"The Bike Safety Music Video"</h3>
+                <span class="subtitle">Director, Producer & Editor</span>
+                <p>Winner of the Suffolk County Legislature's First Annual Bicycle Safety Video Competition.</p>
+                <div class="meta">
+                    <span>Released 12/21/2022</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Nicholas Friedlander</p>
+    </footer>
+
+</body>
+</html>
